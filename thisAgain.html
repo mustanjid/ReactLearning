@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      const js = {
+        name: "Javascript",
+        libraries: ["React", "Vue", "Angular"],
+        printLibrariesWithBindToGetThisAccess: function () {
+          //object scope of this
+          console.log(this);
+
+          console.log("Without this access");
+          this.libraries.forEach(function (lib) {
+            console.log(`${this.name} has ${lib} library`); //this will not get as it is undefined and in another scope
+          });
+
+          console.log("Without this access with bind method");
+          //to get the name of js object we have to use bind method
+          const libs = this.libraries;
+          libs.forEach(
+            function (lib) {
+              console.log(`${this.name} has ${lib} library`); // this will get the name prop as usage of bind method
+            }.bind(this)
+          );
+        },
+        printLibrariesWithArrowFuncToGetThisAccess: function () {
+          this.libraries.forEach((lib) => {
+            console.log(`${this.name} has ${lib}`);
+          });
+        },
+      };
+
+      //js.printLibrariesWithBindToGetThisAccess();
+      console.log("This access with arrow function");
+      js.printLibrariesWithArrowFuncToGetThisAccess();
+    </script>
+  </body>
+</html>
