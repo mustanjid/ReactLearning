@@ -1,12 +1,12 @@
 export default function Text ({addEmoji, addBracket}) {
     let text = 'I am Js'
-    
+
     if(addEmoji){
         text = addEmoji(text, "😀")
     }
 
     if(addBracket){
-        text = addEmoji(text, "😀")
+        text = addBracket(text)
     }
-    return <div>{addEmoji? addEmoji(text, "😀"): text}</div>
+    return <div>{text}</div>
 }
