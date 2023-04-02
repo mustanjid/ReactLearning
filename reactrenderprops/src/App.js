@@ -10,7 +10,7 @@ function App() {
       {/* react render props - take controls of what to render with building logics */}
       {/* <User render={ (isLoggedIn)=> isLoggedIn? "Arif": "Guest" } /> */}
 
-      <h1>CounterWithRender</h1>
+      <h1>CounterWithRenderFunc</h1>
       <CounterWithRender render={ (counter, incrementCount) => (
         <ClickCounter count={counter} incrementCount={incrementCount} />
       )}/>
@@ -21,7 +21,7 @@ function App() {
       )}/>
 
       {/* render props in automatic mode without using func name like render = {} */}
-      <h1>CountereWithChildren</h1>
+      <h1>CountereWithChildren Automatic</h1>
       <CountereWithChildren>
         {(counter, incrementCount) => (
           <ClickCounter count={counter} incrementCount={incrementCount} />
