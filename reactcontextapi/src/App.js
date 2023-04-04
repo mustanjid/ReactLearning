@@ -2,15 +2,16 @@ import React from 'react';
 import ClickCounter from './components/ClickCounter'
 import Section from './components/Section';
 import CountereWithChildren from './components/CountereWithChildren'
+import ThemeContext from './contexts/themeContext';
 
 export default class App extends React.Component {
   state = {
-    theme: 'dark'
+    theme: 'light'
   }
   render(){
     const {theme} = this.state;
     return (
-      <div className='app'>
+      <div>
   
         <CountereWithChildren>
           {(counter, incrementCount) => (
@@ -18,9 +19,9 @@ export default class App extends React.Component {
           )}
         </CountereWithChildren>
 
-        <Provider value={}>
-            <Section theme={theme}/>
-        </Provider>
+        <ThemeContext.Provider value={ {theme: theme} }>
+            <Section />
+        </ThemeContext.Provider>
 
       </div>
     )
