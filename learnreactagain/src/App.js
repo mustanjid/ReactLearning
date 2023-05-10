@@ -5,6 +5,7 @@ import ArrayInReact from "./components/ArrayInReact"
 import SliceArray from "./components/SliceArray"
 import Form from './components/ReactingToInputWithState/ReactingToInputWithState'
 import AForm from './components/ReactingToInputWithState/AForm'
+import StateStructure from './components/StateStructure/statestructure'
 
 function App() {
   return (
@@ -22,6 +23,8 @@ function App() {
       <br />
       <br />
       <AForm />
+      <br />
+      <StateStructure />
     </>
   );
 }
