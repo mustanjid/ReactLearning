@@ -6,6 +6,7 @@ import SliceArray from "./components/SliceArray"
 import Form from './components/ReactingToInputWithState/ReactingToInputWithState'
 import AForm from './components/ReactingToInputWithState/AForm'
 import StateStructure from './components/StateStructure/statestructure'
+import FeebBackForm from './components/StateStructure/FeedBackForm'
 
 function App() {
   return (
@@ -24,7 +25,10 @@ function App() {
       <br />
       <AForm />
       <br />
+      <h2>Changing State Structure</h2>
       <StateStructure />
+      <br />
+      <FeebBackForm  />
     </>
   );
 }
