@@ -24,7 +24,7 @@ export default function Travelplan()
     }
 
     const root = plan[0];
-  const planetIds = root.childIds;
+    const planetIds = root.childIds;
   return (
     <>
       <h2>Places to visit</h2>
