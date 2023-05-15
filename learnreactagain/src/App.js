@@ -7,6 +7,7 @@ import Form from './components/ReactingToInputWithState/ReactingToInputWithState
 import AForm from './components/ReactingToInputWithState/AForm'
 import StateStructure from './components/StateStructure/statestructure'
 import FeebBackForm from './components/StateStructure/FeedBackForm'
+import AvoidDuplication from './components/StateStructure/AvoidDuplication'
 
 function App() {
   return (
@@ -29,6 +30,8 @@ function App() {
       <StateStructure />
       <br />
       <FeebBackForm  />
+      <br />
+      <AvoidDuplication />
     </>
   );
 }
