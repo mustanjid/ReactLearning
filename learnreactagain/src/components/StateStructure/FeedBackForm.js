@@ -10,8 +10,12 @@ export default function FeedBackForm()
     {
         e.preventDefault();
         setStatus('sending')
-        await sendMessage(text);
-        setStatus('sent')
+        try{
+            await sendMessage(text)
+            setStatus('sent')
+        } catch{
+            setStatus('typing')
+        }
     }
 
     const isSending = status === 'sending'
@@ -24,11 +28,11 @@ export default function FeedBackForm()
 
     return(
         <>
-        <form onSubmit={handleSubmit}>
+        <form onSubmit={handleSubmit} type='submit'>
             <p>How was your stay at The Prancing Pony?</p>
             <textarea disabled={isSending} value={text} onChange={ e => setText(e.target.value)} />
             <br />
-            <button disabled={isSending} type="submit">
+            <button disabled={text.length === 0 || status === 'sent'} type="submit">
                 Send
             </button>
             {isSending && <p>Sending...</p>}
@@ -36,6 +40,7 @@ export default function FeedBackForm()
 
         </>
     )
+
     function sendMessage(text){
         return new Promise( resolve => {
             setTimeout(resolve, 2000)
