@@ -8,6 +8,7 @@ import AForm from './components/ReactingToInputWithState/AForm'
 import StateStructure from './components/StateStructure/statestructure'
 import FeebBackForm from './components/StateStructure/FeedBackForm'
 import AvoidDuplication from './components/StateStructure/AvoidDuplication'
+import AvoidNested from './components/StateStructure/AvoidNested/AvoidingNested'
 
 function App() {
   return (
@@ -32,6 +33,8 @@ function App() {
       <FeebBackForm  />
       <br />
       <AvoidDuplication />
+      <br />
+      <AvoidNested />
     </>
   );
 }
