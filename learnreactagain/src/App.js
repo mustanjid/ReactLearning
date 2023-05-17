@@ -9,6 +9,7 @@ import StateStructure from './components/StateStructure/statestructure'
 import FeebBackForm from './components/StateStructure/FeedBackForm'
 import AvoidDuplication from './components/StateStructure/AvoidDuplication'
 import AvoidNested from './components/StateStructure/AvoidNested/AvoidingNested'
+import Accordion from "./components/SharingStateBetweenComponents/Childs/Accordion";
 
 function App() {
   return (
@@ -34,7 +35,9 @@ function App() {
       <br />
       <AvoidDuplication />
       <br />
-      <AvoidNested />
+      {/* <AvoidNested /> */}
+      <br />
+      <Accordion />
     </>
   );
 }
