@@ -9,7 +9,9 @@ import StateStructure from './components/StateStructure/statestructure'
 import FeebBackForm from './components/StateStructure/FeedBackForm'
 import AvoidDuplication from './components/StateStructure/AvoidDuplication'
 import AvoidNested from './components/StateStructure/AvoidNested/AvoidingNested'
-import Accordion from "./components/SharingStateBetweenComponents/Childs/Accordion";
+import Accordion from "./components/SharingStateBetweenComponents/Childs/Accordion"
+import SyncedInputs from "./components/SharingStateBetweenComponents/Syncedinputs ";
+import FilteredList from "./components/SharingStateBetweenComponents/FilteringList/FilteringList";
 
 function App() {
   return (
@@ -38,6 +40,11 @@ function App() {
       {/* <AvoidNested /> */}
       <br />
       <Accordion />
+      <br />
+      <SyncedInputs />
+      <br />
+      <br />
+      <FilteredList />
     </>
   );
 }
