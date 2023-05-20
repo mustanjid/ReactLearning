@@ -12,6 +12,7 @@ import AvoidNested from './components/StateStructure/AvoidNested/AvoidingNested'
 import Accordion from "./components/SharingStateBetweenComponents/Childs/Accordion"
 import SyncedInputs from "./components/SharingStateBetweenComponents/Syncedinputs ";
 import FilteredList from "./components/SharingStateBetweenComponents/FilteringList/FilteringList";
+import StateIsTiedToAPosition from './components/PreservingAndResettingState/Stateistiedtoaposition/Stateistiedtoaposition'
 
 function App() {
   return (
@@ -45,6 +46,8 @@ function App() {
       <br />
       <br />
       <FilteredList />
+      <br />
+      <StateIsTiedToAPosition/>
     </>
   );
 }
