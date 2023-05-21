@@ -13,6 +13,7 @@ import Accordion from "./components/SharingStateBetweenComponents/Childs/Accordi
 import SyncedInputs from "./components/SharingStateBetweenComponents/Syncedinputs ";
 import FilteredList from "./components/SharingStateBetweenComponents/FilteringList/FilteringList";
 import StateIsTiedToAPosition from './components/PreservingAndResettingState/Stateistiedtoaposition/Stateistiedtoaposition'
+import SameComponentAtTheSameCompostionPreserveState from "./components/PreservingAndResettingState/SameComponentAtTheSamePositionPreservesState/SameComponentAtTheSamePositionPreservesState";
 
 function App() {
   return (
@@ -48,6 +49,8 @@ function App() {
       <FilteredList />
       <br />
       <StateIsTiedToAPosition/>
+      <br />
+      <SameComponentAtTheSameCompostionPreserveState />
     </>
   );
 }
