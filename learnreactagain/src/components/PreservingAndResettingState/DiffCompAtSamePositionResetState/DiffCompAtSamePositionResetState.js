@@ -1,42 +1,43 @@
 import { useState } from "react";
 
-export default function SameComponentAtTheSameCompostionPreserveState()
+export default function DiffCompAtTheSamePostionResetState()
 {
-    const [isFancy, setIsFancy] = useState(false)
+    const [isPasued, setisPasued] = useState(false)
     return(
         <>
         <div>
-            {isFancy? (<Counter isFancy={true} />) : (<Counter isFancy={false}/>)}
+            {/* reset the state into its initial position */}
+            {isPasued? <p>See you later!</p> : (<Counter/>)}
         </div>
 
         <label>
-            <input type="checkbox" onClick={(e)=> setIsFancy(e.target.checked)} />
-            Use fancy styling
+            <input type="checkbox" onClick={(e)=> setisPasued(e.target.checked)} />
+            Take a break
         </label>
         </>
     )
 }
 
-function Counter({isFancy})
+function Counter({isPasued})
 {
     const[score, setScore] = useState(0)
     const[hover, setHover] = useState(false)
 
     let className = "counter"
+
     if(hover)
     {
         className += "hover"
     }
 
-    if(isFancy)
-    {
-        className += "fancy"
-    }
-
     return(
+        <>
+       <h3>Different componet at the same position reset state</h3> 
         <div className={className} onPointerEnter={()=>setHover(true)} onPointerLeave={()=>setHover(false)} >
             <h1>{score}</h1>
             <button onClick={()=>{setScore(score + 1)}}>Add One</button>
         </div>
+
+        </>
     )
 }

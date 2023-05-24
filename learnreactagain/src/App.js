@@ -14,6 +14,9 @@ import SyncedInputs from "./components/SharingStateBetweenComponents/Syncedinput
 import FilteredList from "./components/SharingStateBetweenComponents/FilteringList/FilteringList";
 import StateIsTiedToAPosition from './components/PreservingAndResettingState/Stateistiedtoaposition/Stateistiedtoaposition'
 import SameComponentAtTheSameCompostionPreserveState from "./components/PreservingAndResettingState/SameComponentAtTheSamePositionPreservesState/SameComponentAtTheSamePositionPreservesState";
+import DiffCompAtTheSamePostionResetState from "./components/PreservingAndResettingState/DiffCompAtSamePositionResetState/DiffCompAtSamePositionResetState";
+import Scoreboard from "./components/ResettingStateAtTheSamePosition/ResettingStateAtTheSamePosition";
+import ResettingAStateWithAKey from "./components/ResettingStateAtTheSamePosition/ResettingStateWithAKey";
 
 function App() {
   return (
@@ -51,6 +54,12 @@ function App() {
       <StateIsTiedToAPosition/>
       <br />
       <SameComponentAtTheSameCompostionPreserveState />
+      <br />
+      <DiffCompAtTheSamePostionResetState />
+      <br />
+      <Scoreboard />
+      <br />
+      <ResettingAStateWithAKey />
     </>
   );
 }
