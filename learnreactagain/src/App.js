@@ -17,6 +17,7 @@ import SameComponentAtTheSameCompostionPreserveState from "./components/Preservi
 import DiffCompAtTheSamePostionResetState from "./components/PreservingAndResettingState/DiffCompAtSamePositionResetState/DiffCompAtSamePositionResetState";
 import Scoreboard from "./components/ResettingStateAtTheSamePosition/ResettingStateAtTheSamePosition";
 import ResettingAStateWithAKey from "./components/ResettingStateAtTheSamePosition/ResettingStateWithAKey";
+import Messenger from "./components/PreservingAndResettingState/ResettingAFormWithAKey/ResettingAFormWithAKey";
 
 function App() {
   return (
@@ -60,6 +61,8 @@ function App() {
       <Scoreboard />
       <br />
       <ResettingAStateWithAKey />
+      <br />
+      <Messenger />
     </>
   );
 }
