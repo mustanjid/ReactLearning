@@ -18,6 +18,7 @@ import DiffCompAtTheSamePostionResetState from "./components/PreservingAndResett
 import Scoreboard from "./components/ResettingStateAtTheSamePosition/ResettingStateAtTheSamePosition";
 import ResettingAStateWithAKey from "./components/ResettingStateAtTheSamePosition/ResettingStateWithAKey";
 import Messenger from "./components/PreservingAndResettingState/ResettingAFormWithAKey/ResettingAFormWithAKey";
+import TaskApp from "./components/ExtractStateLogicIntoAReducer/TaskApp";
 
 function App() {
   return (
@@ -63,6 +64,9 @@ function App() {
       <ResettingAStateWithAKey />
       <br />
       <Messenger />
+      <br />
+      <h3>Extracting state into reducer</h3>
+      <TaskApp />
     </>
   );
 }
