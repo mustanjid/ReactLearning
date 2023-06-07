@@ -19,6 +19,7 @@ import Scoreboard from "./components/ResettingStateAtTheSamePosition/ResettingSt
 import ResettingAStateWithAKey from "./components/ResettingStateAtTheSamePosition/ResettingStateWithAKey";
 import Messenger from "./components/PreservingAndResettingState/ResettingAFormWithAKey/ResettingAFormWithAKey";
 import TaskApp from "./components/ExtractStateLogicIntoAReducer/TaskApp";
+import Page from "./components/PassDataDeeplyWithContext/PassDataDeeplyWithContext";
 
 function App() {
   return (
@@ -67,6 +68,8 @@ function App() {
       <br />
       <h3>Extracting state into reducer</h3>
       <TaskApp />
+      <br />
+      <Page />
     </>
   );
 }
