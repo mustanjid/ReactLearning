@@ -69,7 +69,7 @@ function App() {
       <h3>Extracting state into reducer</h3>
       <TaskApp />
       <br />
-      <Page />
+      {/* <Page /> */}
     </>
   );
 }
